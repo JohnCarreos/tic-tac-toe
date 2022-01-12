@@ -1,0 +1,249 @@
+body {
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  overflow: hidden;
+}
+
+#title {
+  color: white;
+}
+
+.tile-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
+  justify-items: center;
+}
+
+.outer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #6ed2cb;
+  border: 1px solid #031926;
+  width: 18vmin;
+  height: 18vmin;
+  cursor: pointer;
+}
+
+.welcome-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  margin: 2em 0.5em;
+  background-color: #031926;
+  color: white;
+  border-color: white;
+  border-radius: 40px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1em;
+  border-width: 1px;
+  font-weight: 500;
+  width: 6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 1s;
+  transition: visibility 0s, opacity 1s;
+}
+
+button:hover {
+  background-color: rgba(3, 25, 38, 0.8);
+  border-color: rgba(15, 15, 15, 0.8);
+}
+
+.buttons-win-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.buttons-win {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+.welcome-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome {
+  position: relative;
+  background-color: white;
+  width: 20em;
+  height: 20em;
+  margin: auto 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 30px;
+}
+
+.welcome button {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  visibility: visible;
+  opacity: 1;
+  margin: 0.5em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 20px;
+}
+
+.welcome h2 {
+  margin-top: 0;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.tile {
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.welcome h2 {
+  font-size: 2em;
+}
+
+.welcome-btn button {
+  font-size: 3em;
+}
+
+.buttons-win button {
+  font-size: 2em;
+}
+
+@media screen and (min-width: 280px) {
+  h1 {
+    font-size: 30px;
+  }
+  .tile {
+    font-size: 70px;
+  }
+  .buttons-win button {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  h1 {
+    font-size: 40px;
+  }
+  .tile {
+    font-size: 110px;
+  }
+  .buttons-win button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 55px;
+  }
+  .tile {
+    font-size: 120px;
+  }
+  .buttons-win button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 60px;
+  }
+  .tile {
+    font-size: 140px;
+  }
+  .buttons-win button {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
